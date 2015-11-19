@@ -248,7 +248,7 @@
     
     
           <div id="pageViews" class="inner fixed">
-            <h3 class="abs"><span class="total"></span><span class="unitName">Prescriptions <br> Written</span></h3>
+            <h3 class="abs"><span class="total"></span><span class="unitName">Spaces <br> Created</span></h3>
             <div class='circle'></div>
           </div>
         </div>      
@@ -341,7 +341,7 @@
           
       // populate company name dropdown
       var companySelect;
-      MP.api.query('/api/2.0/events/properties/values', {name: 'Practice Name', event: 'Order e-Prescription'}).done(function(results) {
+      MP.api.query('/api/2.0/events/properties/values', {name: 'Company', event: 'Create Space'}).done(function(results) {
         for (var company in results) {
           companyOptions.items.push({label: results[company], value: results[company]});
         }
@@ -374,7 +374,7 @@
             params = {
               from: dateRange.from,
               to: dateRange.to,
-              "on": "\"" + domain + "\" in string(properties[\"Practice Name\"])", 
+              "on": "\"" + domain + "\" in string(properties[\"Company\"])", 
             }
             MP.api.segment(eventName, params).done(function(results) {
               total = 0;
