@@ -523,8 +523,8 @@
       			to : dateRange.to
   			}
   
-  		MP.api.segment('Order e-Prescription', segmentParams).done(function(resultsObj) {
-  			var pageViews = resultsObj.sum().values()['Order e-Prescription'];
+  		MP.api.segment('Create Space', segmentParams).done(function(resultsObj) {
+  			var pageViews = resultsObj.sum().values()['Create Space'];
   		    resultsContainer.html('<span>Total</span>' + numberWithCommas(pageViews));
   
   		    $('#pageViews .circle').circleProgress({
