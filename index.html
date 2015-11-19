@@ -465,8 +465,8 @@
 			}
 
 
-		MP.api.segment('Log In', segmentParams).done(function(resultsObj) {
-			var uniqueUsers = resultsObj.sum().values()['Log In'];
+		MP.api.segment('Landing Page Loaded', segmentParams).done(function(resultsObj) {
+			var uniqueUsers = resultsObj.sum().values()['Landing Page Loaded'];
 		    resultsContainer.html('<span>Total</span>' + numberWithCommas(uniqueUsers));
 
 
