@@ -496,7 +496,7 @@
 
 		MP.api.segment('Sign Up', segmentParams).done(function(resultsObj) {
 			
-			var newUsers = resultsObj.sum().values()['Sign Up'];
+			var newUsers = resultsObj.sum().values()['Landing Page Loaded'];
 		    resultsContainer.html('<span>Total</span>' + numberWithCommas(newUsers));
 
 		    $('#newUsers .circle').circleProgress({
