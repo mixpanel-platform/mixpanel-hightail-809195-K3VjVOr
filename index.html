@@ -442,7 +442,7 @@
           // get all event names 
           MP.api.query('/api/2.0/events/names').done(function(results) {
             var allEvents = results;
-            MP.api.query('/api/2.0/events', {event: results, from: dateRange2.from, to: dateRange2.to, unit: 'day', where:'"' + companyName + '" in string(properties["Create Space"])'}).done(function(segResults) {
+            MP.api.query('/api/2.0/events', {event: results, from: dateRange2.from, to: dateRange2.to, unit: 'day', where:'"' + companyName + '" in string(properties["Company"])'}).done(function(segResults) {
               byDomain.MPChart('setData', segResults.data.values);
               byDomainTable.MPTable('setData', segResults.data.values);
             });
