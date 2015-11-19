@@ -229,7 +229,7 @@
     </style>
     <div class="mixpanel-platform-section">
       <img src="https://d13yacurqjgara.cloudfront.net/users/419362/avatars/small/964874c909920ef8a09badcf6e2f25e5.png">
-      <h1>Practice Fusion | Dashboard</h1>
+      <h1>Hightail Spaces | Dashboard</h1>
     </div>
     <div class="mixpanel-platform-section">
       <h2 style="font-size: 18px; color: rgb(95,105,131)">High Level Metrics</h2>
@@ -258,7 +258,7 @@
     </div>
     <div class="mixpanel-platform-section">
       <div class="instructions">
-        <h2 style="font-size: 18px; color: rgb(95,105,131)">Practice Level Activity</h2>
+        <h2 style="font-size: 18px; color: rgb(95,105,131)">Hightail Spaces Activity</h2>
         <p style="font-size: 13px; color: rgb(95,105,131)">Select the customer for which you would like to see the top activity.</p>
       </div>
       <div id="dateSelect2" style="float: right;"></div>
@@ -268,7 +268,7 @@
     </div>
     <div class="mixpanel-platform-section">
       <div class="instructions">
-        <h2 style="font-size: 18px; color: rgb(95,105,131)">Practice Engagement</h2>
+        <h2 style="font-size: 18px; color: rgb(95,105,131)">Hightail Engagement</h2>
         <p style="font-size: 13px; color: rgb(95,105,131)">Select the event for which you would like to see the most engaged and least engaged users.</p>
       </div>
       <div id="dateSelect" style="float: right;"></div>
@@ -293,8 +293,8 @@
           companies = [];
           
       var companyParams = {
-        name: "Practice Name",
-        event: "Order e-Prescription"
+        name: "Company",
+        event: "Create Space"
       }
       MP.api.query('api/2.0/events/properties/values', companyParams).done(function(results) {
         console.log(results);
